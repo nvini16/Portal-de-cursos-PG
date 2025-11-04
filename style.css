@@ -1,10 +1,14 @@
 :root {
     --background-color: #c9c6c6;
+    --background-header: #257fbf;
+    --backgroundcolor-section: #c2bebe;
+    --backgroundcolor-main: #257fbf;
+    --box-shadow: #b0a9a9;
     --color: #000;
-    --background-header: #143975;
     --color-header: #d1cfcf;
     --border-main: #3d3a3a;
-    --backgroundcolor-section: #c2bebe;
+    --a-hover: #00c9fb;
+    --a-main: #000000;
 }
 
 body {
@@ -13,11 +17,16 @@ body {
     
 }
 
-header {
+main {
+    margin: 50px;
+}
+
+header, footer {
     text-align: center;
     background-color: var(--background-header) ;
     color: var(--color-header);
     padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
@@ -26,6 +35,14 @@ a {
     display: inline-block;
     margin-right: 15px;
     
+}
+
+a:hover {
+    color: var(--a-hover);
+}
+
+.a-main {
+    color: var(--a-main);
 }
 
 li {
@@ -38,6 +55,20 @@ section {
     align-items: center;
     max-width: 100%;
     background-color: var(--backgroundcolor-section);
+    
+}
+
+h2 {
+    text-align: center;
+    background-color: var(--backgroundcolor-main);
+}
+
+img {
+    height: 300px;
+    width: 470px;
+    border-radius: 6px;
+    box-shadow: 6px 6px rgb(116, 115, 115);
+
     
 }
 
