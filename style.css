@@ -54,8 +54,8 @@ li {
 }
 
 section {
-    display: flex;
-    justify-content: space-between;
+
+ 
     align-items: center;
     max-width: 100%;
     background-color: var(--backgroundcolor-section);
@@ -125,5 +125,19 @@ img {
 
 a {
     color: var(--color-header);
+}
+
+/* NOTICIAS */
+
+.p-legenda {
+    font-size: 13px
+}
+
+.margin-main {
+    padding: 13px;
+}
+
+.center-img {
+    text-align: center;
 }
 
