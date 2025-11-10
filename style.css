@@ -1,11 +1,13 @@
 :root {
-    --background-color: #c9c6c6;
+    --background-color: #d8d3d3;
     --background-header: #257fbf;
-    --backgroundcolor-section: #c2bebe;
+    --backgroundcolor-section: #f8f2f2;
     --backgroundcolor-main: #257fbf;
     --backgroundcolor-menu: #4fc3f7;
     --backgroundcolor-ahover: #0288d1;
     --backgroundcolor-h4: #729cd0;
+    --backgroundcolor-button: #0288d1;
+    --backgroundcolor-em: #b6b0b0;
     --box-shadow: #b0a9a9;
     --color: #000;
     --color-header: #d1cfcf;
@@ -15,21 +17,50 @@
     --color-a-main: #7d7474;
 }
 
-body {
-    background-color: var(--background-color);
-    font-family:sans-serif ;
+@media (max-width: 768px){
+
+    
+    body {
+        background-color: var(--background-color);
+        font-family: Arial, Helvetica, sans-serif ;
+        
+    }
+}
+
+
+main {
+
+    border-radius: 15px;
+
+ 
+}
+
+@media (max-width:768px) {
+
+    .video {
+        border: 3px solid #00c9fb;
+        border-radius: 10px;
+        max-width: 768px;
+        
+    }
+}
+
+img {
+    height: 40vh;
+    width: 60vh;
+    box-shadow: 6px 6px  10px rgb(116, 115, 115);
+    border: 3px solid #00c9fb;
+    border-radius: 10px;
+    text-align: center;
     
 }
 
-main {
-    margin: 50px;
-}
 
 header, footer {
     text-align: center;
     background-color: var(--background-header) ;
     color: var(--color-header);
-    padding: 30px;
+  
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -57,7 +88,6 @@ section {
 
  
     align-items: center;
-    max-width: 100%;
     background-color: var(--backgroundcolor-section);
     
 }
@@ -72,50 +102,11 @@ h4 {
     background-color: var(--backgroundcolor-h4);
 }
 
-img {
-    height: 300px;
-    width: 470px;
-    border-radius: 6px;
-    box-shadow: 6px 6px  10px rgb(116, 115, 115);
-
-    
-}
 
 .a {
     color: var(--color-a-main);
 }
 
-/* Menu lateral*/
-
-.menu {
-    width: 220px;
-    background-color: var(--backgroundcolor-menu);
-    color: white;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding-top: 20px;
-}
-
-.menu h2 {
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 25px;
-
-}
-
-.menu a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 12px 20px;
-    transition: background 0.3s;
-}
-
-.menu a:hover {
-    background-color: var(--backgroundcolor-ahover);
-}
 
 /* RODAPÉ */
 
@@ -134,11 +125,18 @@ a {
 }
 
 .margin-main {
-    padding: 9px;
+    padding: 3px;
 }
 
 .center-img {
     text-align: center;
 }
+
+
+.em {
+    background-color: var(--backgroundcolor-em);
+    margin: 70px 5px;
+}
+
 
 
