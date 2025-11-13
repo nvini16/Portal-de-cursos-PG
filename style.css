@@ -138,6 +138,15 @@ section {
     
 }
 
+.carta {
+    transition: transform 0.3s ease;
+
+}
+
+.carta:hover {
+    transform: translatey(-10px);
+}
+
 h2 {
     text-align: center;
     background-color: var(--backgroundcolor-main);
