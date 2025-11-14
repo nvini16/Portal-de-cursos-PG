@@ -95,7 +95,10 @@ main {
     background-color: #0303034b;
 }
 
-
+.destaques- {
+    background-color: rgba(0, 0, 0, 0.747);
+    color: #fff;
+}
 
 
 
